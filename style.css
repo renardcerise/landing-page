@@ -1,0 +1,346 @@
+/* --------------- reset.css --------------- */
+@font-face {
+    font-family: Gotham XNarrow; /* Имя шрифта */
+    src: url(fonts/12127.ttf); /* Путь к файлу со шрифтом */
+   }
+
+
+html, body{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;                               /* обнуляем отступы и убираем бордюры */
+	vertical-align: baseline;          /* приводим все к одной базовой линии */
+	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+	font-size: 100%;    
+	font-family: "Gotham XNarrow";  /* размер шрифта всем одинаковый */
+
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+.red {
+    color: #cc0300; 
+}
+a {
+    color: #fcfcfc;
+    text-decoration: none;
+}
+   
+/*хедер*/
+.header-screen{
+	background:url(img/back.jpg) no-repeat;
+	background-size: cover;
+	max-width:  1920px;
+	width: 100%;
+    height: 630px;
+	margin:0 auto;
+    
+}
+.container{
+	max-width: 1106px;
+	width: 100%;
+	margin:0 auto;
+    
+}
+
+.nav {
+    padding-top: 25px;
+}
+.switch-field {
+    width: 600px;
+}
+.logo-block{
+	float: left;
+    vertical-align: middle;
+}
+.logo-block img {
+    height: 50px;
+    margin-top: 10px;
+    vertical-align: middle;
+}
+.logo{
+	font-size: 32px;
+	color:#fcfcfc;
+   margin-left: 5px;
+    vertical-align: middle;
+  
+}
+.menu{
+	float: right;
+	list-style-type: none;
+	color: #fcfcfc;
+    font-size: 20px;
+}
+.menu li{
+	display: inline-block;
+	margin-right: 28px;
+	padding-bottom:7px;
+    vertical-align: middle;
+    
+}
+.menu li:last-child{
+	margin-right:0;
+}
+.menu li:hover{
+	
+	
+	transition: 0.5s;
+	color: #cc0300
+    cursor: pointer;
+}
+.menu li:last-child{
+    border-bottom: none;
+}
+.menu li img {
+    vertical-align: middle;
+}
+.slogan{
+	
+	width:100%;
+	margin: 90px auto;
+	text-align: center;
+}
+.slogan h1{
+	
+	color: #fcfcfc;
+	font-size: 115px;
+	margin: 0 auto 40px;
+	text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+.slogan hr{
+	width:750px;
+	border:0.5px solid #fcfcfc;
+    margin: 0 auto 40px;
+}
+.slogan .head {
+    color: #fcfcfc;
+    font-size: 30px;
+}
+.button {
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+button {
+        cursor: pointer;
+		border: none;
+		background: #cc0300;
+		padding:  10px 30px; 
+		color: #fcfcfc;
+		text-transform: uppercase;
+        font-family: "Gotham XNarrow";
+        font-size: 20px;
+
+    
+    
+}
+button:hover{
+    background: #a30200;
+    transition: 0.5s;
+}
+
+/*блок преимущества*/
+.plus_main {
+    background:url(img/bg_plus.png) no-repeat;
+	background-size: cover;
+	max-width:  1920px;
+	width: 100%;
+    height: 500px;
+	margin:0 auto;
+}
+.headline h1 {
+    margin-top: 65px;
+    font-size: 48px;
+    text-align: center;
+}
+.plus{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.block_plus{    
+	display: flex;
+	flex-direction: column;	
+	align-items: center;
+    width: 200px;
+    height: 200px;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+.block_plus:last-child{
+    margin-right: 0;
+}
+.block_plus img{
+	height: 100px;
+    width: 100px;
+}
+.block_plus h3{
+	font-size: 25px;
+	margin-top: 30px;
+}
+.block_plus span{	
+	font-size: 17px;
+    text-align: center;
+}
+.block_plus .red {
+    font-size: 25px;
+}
+
+/*блок услуги*/
+.usluga_blog {
+    background:url(img/bg_usluga.png) no-repeat;
+	background-size: cover;
+	max-width:  1920px;
+	width: 100%;
+    height: 867px;
+	margin:0 auto;
+}
+.usluga_blog {
+    color: white;
+}
+.usluga {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.usluga_element{    
+	display: flex;
+	flex-direction: column;	
+	
+    width: 300px;
+    height: 200px;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+.usluga_element:last-child {
+    margin-right: 0;
+}
+.usluga hr {
+    margin-top: 50px;
+    margin-left: 15px;
+    height: 50px;
+}
+h4 {
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+.other {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+}
+.usluga_blog button {
+    right: 44%;
+    margin-top: 55px;
+}
+/*блок автопарка*/
+.carpark_blog {
+    background:url(img/bg_autopark.png) no-repeat;
+	background-size: cover;
+	max-width:  1920px;
+	width: 100%;
+    height: 975px;
+	margin:0 auto;
+}
+.park {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.park_element {
+    display: flex;
+    flex-wrap: wrap;
+	flex-direction: column;
+    
+    width: 500px;
+    height: 300px;
+    border: 1px solid black;
+    background-color: #fcfcfc;
+    margin-bottom: 50px;
+    margin-right: 100px;
+}
+.no_margin {
+    margin-right: 0;
+}
+.park_table {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.zagl h3  {
+    font-size: 28px; 
+    margin: 0px;
+    width: 280px;
+    margin-bottom: 10px;
+}
+.left_column {
+    font-size: 18px;
+    width: 200px;
+    height: 25px;
+}
+.right_column {
+    font-weight: bold;
+}
+.cost h3{
+    margin-top: 10px;
+}
+.table_button button{
+    right: inherit;
+}
+.img {
+    width: 150px;
+}
+.equip {
+    display: none;
+}
+
+
+/*футер*/
+.footer {
+    background-color: #050405;
+    height: 420px;
+   
+}
+.footer_elements {
+
+	
+}
+.map {
+    margin-top: 60px;
+    float: left;
+}
+.info {
+    float: right;
+    margin-top: 60px;
+    max-width: 400px;
+    margin-right: 40px;
+}
+.info_main img {
+   vertical-align: middle;
+}
+.info_main_text {
+    color: #fcfcfc;
+    font-size: 30px;
+    margin-left: 10px;
+    vertical-align: middle;
+    
+}
+.info_element {
+    margin-top: 35px;
+   
+}
+.info_element img {
+     vertical-align: middle;
+}
+.info_element_text {
+    color: #fcfcfc;
+    margin-left: 15px;
+    font-size: 21px;
+    vertical-align: middle;
+}
+
