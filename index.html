@@ -6,16 +6,17 @@
 <meta charset="utf-8">
     
     
-<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:900" rel="stylesheet">
-    
+
+
 <link rel="stylesheet" type="text/css" href="css\font-awesome.min.css">    
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="button.css">    
 <link rel="stylesheet" href="slide.css">
 
     
-            
+         
 <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="mask.js"></script>
 <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
@@ -58,13 +59,15 @@
 </div>
    
 		</div>
-        <div class="button">
+        <div class="button" id="pop-up">
 		  <button>Заказать</button>
+            
+            
         </div>
 	</div>	
 </div>
     
-    
+
     
 <div class="clearfix"></div>
 <div class="plus_main">
@@ -139,7 +142,7 @@
         </div>
     </div>
     <div class="other">И МНОГОЕ ДРУГОЕ</div>    
-        <div class="button">
+        <div class="button" id="pop-up2">
     <button>УКАЗАТЬ СВОЙ ГРУЗ</button>
         </div>
         
@@ -189,7 +192,7 @@
         <td colspan="2" class="zagl cost"><h3>от 8 000 руб./смена</h3></td>
         </tr>
         <tr>
-        <td colspan="2" class="table_button"><button>ЗАКАЗАТЬ</button></td> 
+        <td colspan="2" class="table_button"><button id="pop-up">ЗАКАЗАТЬ</button></td> 
         </tr>
         </tbody>
         </table> 
@@ -218,7 +221,7 @@
         <td colspan="2" class="zagl cost"><h3>от 8 000 руб./смена</h3></td>
         </tr>
         <tr>
-        <td colspan="2" class="table_button"><button>ЗАКАЗАТЬ</button></td> 
+        <td colspan="2" class="table_button"><button id="pop-up">ЗАКАЗАТЬ</button></td> 
         </tr>
         </tbody>
         </table>
@@ -246,7 +249,7 @@
         <td colspan="2" class="zagl cost"><h3>от 10 000 руб./смена</h3></td>
         </tr>
         <tr>
-        <td colspan="2" class="table_button"><button>ЗАКАЗАТЬ</button></td> 
+        <td colspan="2" class="table_button"><button id="pop-up">ЗАКАЗАТЬ</button></td> 
         </tr>
         </tbody>
         </table>
@@ -274,7 +277,7 @@
         <td colspan="2" class="zagl cost"><h3>от 8 000 руб./смена</h3></td>
         </tr>
         <tr>
-        <td colspan="2" class="table_button"><button>ЗАКАЗАТЬ</button></td> 
+        <td colspan="2" class="table_button"><button id="pop-up">ЗАКАЗАТЬ</button></td> 
         </tr>
         </tbody>
         </table>
@@ -308,7 +311,7 @@
         <td colspan="2" class="zagl cost"><h3>от 20 000 руб./смена</h3></td>
         </tr>
         <tr>
-        <td colspan="2" class="table_button"><button>ЗАКАЗАТЬ</button></td> 
+        <td colspan="2" class="table_button"><button id="pop-up">ЗАКАЗАТЬ</button></td> 
         </tr>
         </tbody>
         </table> 
@@ -351,6 +354,54 @@
       </div>
   </div>
 </div>
+    
+    
+    
+        <!-- ========== MODALS ========== -->
+<div id="modal-window">
+   <span class="modal-close">&#10006;</span>
+   <div class="align-content">
+      <div class="content">
+          
+        <div class="form">
+          <div class="mail">
+          <span class="name"><span class="red">З</span>аказать манипулятор</span>
+              </div>
+          <form action="form.php" method="post">
+            <input type="text" name="fio" placeholder="Имя" required/>
+
+            <input type="text" name="phone" class="phone_number" placeholder="Телефон" required/>
+              
+            <div class="custom-select">
+            <select class="manipult" name="tech">
+                <option hidden disabled selected>Выберите технику</option>
+                <option value="HINO 500 Tadano 503 низкорамный">Манипулятор HINO 500 Tadano 503 низкорамный</option>
+                <option  value="Nissan Diesel Tadano 504 низкорамный">Манипулятор Nissan Diesel Tadano 504 низкорамный</option>
+                <option value="ISUZU UNIC URV-554">Манипулятор ISUZU UNIC URV-554</option>
+                <option value="Nissan Diesel Tadano 504">Манипулятор Nissan Diesel Tadano 504</option>
+
+            </select>
+            </div>
+            <textarea name="message" placeholder="Описание перевозки (что перевозите, откуда и куда)"> </textarea>
+            <div class="check">
+              <img src="img/check.png" align="middle">
+              <span class="check_text">Я даю согласие на хранение и обработку персональных данных</span>                  
+              </div>
+              <div class="clearfix"></div>
+              
+              <div class="button">
+            <button class="button" type="submit">Отправить запрос</button>
+              </div>
+
+          </form>
+              
+        </div>
+
+      </div>
+   </div>
+</div>
+<!-- ========== END MODALS ========== -->
 </body>
 </html>
+
 

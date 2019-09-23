@@ -1,4 +1,17 @@
 $( document ).ready(function() {
+    
+    $(".phone_number").mask("+7(999)999-99-99");
+    
+    
+       $('#pop-up, #pop-up2').click(function() {
+      $('#modal-window').addClass('active');
+   });      
+    
+   $('.modal-close').click(function() {
+      $(this).parent().removeClass('active');
+   });
+    
+        
 
 $( "input" ).on( "click", function() {
     
@@ -118,6 +131,5 @@ $(function() {
     slider.find('.fa').on('mouseleave', function() { autoRunSlider(); });
 });
 
-// Em An
-// 8-2017
-// https://codepen.io/collection/AGNJNB
+
+
